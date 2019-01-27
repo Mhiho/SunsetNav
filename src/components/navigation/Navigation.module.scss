@@ -65,11 +65,20 @@ h1 {
   align-items: center;
 }
 h2 {
+  height: 50px;
   color: darken(#fff, 5%);
   &:hover {
     color: darken(#d9d9d9, 60%);
   }
 }
+h3 {
+  height: 40px;
+}
+h4 {
+  height: 30px;
+}
+
+
 .courses {
   flex-direction: row;
   display: flex;
