@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+}
+.mainContainer {
+  border-bottom: 8px solid darken(#f7797d, 20%);
+  background: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d);
+}
+
+nav {
+  cursor: pointer;
+  height: 100px;
+}
+
+ul {
+  display: flex;
+  height: 100px;
+  width: 100vw;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  color: darken(#fff, 0%);
+  &:hover {
+    color: darken(#d9d9d9, 40%);
+  }
+  margin: 0 auto;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.addClass {
+  color: darken(#d9d9d9, 40%);
+}
+
+.container {
+  cursor: pointer;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 3;
+  border: 0;
+  padding: 0 30px;
+  box-shadow: 0 3px 5px 2px rgba(173, 169, 150, 0.6);
+  color: #fff;
+  outline: 2px solid #f7797d;
+}
+.categories {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  color: darken(#fff, 5%);
+  &:hover {
+    color: darken(#d9d9d9, 60%);
+  }
+}
+.courses {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darken(#fff, 60%);
+  &:hover {
+    color: darken(#fff, 85%);
+  }
+}
+.author {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.course {
+  color: darken(#fff, 10%);
+  &:hover {
+    color: darken(#d9d9d9, 75%);
+  }
+}
+@media (max-width: 768px) {
+  ul,
+  nav {
+    height: 180px;
+    box-sizing: border-box;
+  }
+  ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  li {
+    box-sizing: border-box;
+    height: 59px;
+    border: 1px solid black;
+    width: 100%;
+  }
+  li:nth-child(3) {
+    border-bottom: 3px solid black;
+  }
+  .container {
+    flex-direction: column;
+    outline: none;
+  }
+  h2 {
+    height: 60px;
+  }
+  h3 {
+    height: 100px;
+  }
+  h4 {
+    margin-top: 6%;
+  }
+  .author {
+    margin-bottom: 35%;
+  }
+}
